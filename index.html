@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodipogu Anok | AI & Data Science Engineer | Full Stack Developer</title>
+    <meta name="description"
+        content="Portfolio of Bodipogu Anok, specializing in Artificial Intelligence, Machine Learning pipelines, Data Science workflows, and scalable Full Stack web and mobile solutions.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- AI Intelligence Dashboard Layout -->
+
+    <!-- Background Neural Grid & Floating Particles -->
+    <div class="parallax-bg-container">
+        <!-- Layer 1: Neural Grid (SVG nodes and grid lines overlay) -->
+        <div class="bg-neural-grid" id="neural-grid">
+            <!-- SVG Neural Network Architecture (Left Background) -->
+            <svg class="neural-network-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <g class="network-nodes">
+                    <!-- Layer 1 Nodes -->
+                    <circle cx="50" cy="100" r="6" class="node input-node"></circle>
+                    <circle cx="50" cy="200" r="6" class="node input-node"></circle>
+                    <circle cx="50" cy="300" r="6" class="node input-node"></circle>
+                    <!-- Layer 2 Nodes -->
+                    <circle cx="200" cy="70" r="7" class="node hidden-node-1"></circle>
+                    <circle cx="200" cy="150" r="7" class="node hidden-node-2"></circle>
+                    <circle cx="200" cy="250" r="7" class="node hidden-node-3"></circle>
+                    <circle cx="200" cy="330" r="7" class="node hidden-node-4"></circle>
+                    <!-- Layer 3 Nodes -->
+                    <circle cx="350" cy="150" r="6" class="node output-node-1"></circle>
+                    <circle cx="350" cy="250" r="6" class="node output-node-2"></circle>
+
+                    <!-- Connections -->
+                    <line x1="50" y1="100" x2="200" y2="70" class="conn-line"></line>
+                    <line x1="50" y1="100" x2="200" y2="150" class="conn-line"></line>
+                    <line x1="50" y1="100" x2="200" y2="250" class="conn-line"></line>
+                    <line x1="50" y1="200" x2="200" y2="70" class="conn-line"></line>
+                    <line x1="50" y1="200" x2="200" y2="150" class="conn-line"></line>
+                    <line x1="50" y1="200" x2="200" y2="250" class="conn-line"></line>
+                    <line x1="50" y1="200" x2="200" y2="330" class="conn-line"></line>
+                    <line x1="50" y1="300" x2="200" y2="150" class="conn-line"></line>
+                    <line x1="50" y1="300" x2="200" y2="250" class="conn-line"></line>
+                    <line x1="50" y1="300" x2="200" y2="330" class="conn-line"></line>
+
+                    <line x1="200" y1="70" x2="350" y2="150" class="conn-line"></line>
+                    <line x1="200" y1="70" x2="350" y2="250" class="conn-line"></line>
+                    <line x1="200" y1="150" x2="350" y2="150" class="conn-line"></line>
+                    <line x1="200" y1="150" x2="350" y2="250" class="conn-line"></line>
+                    <line x1="200" y1="250" x2="350" y2="150" class="conn-line"></line>
+                    <line x1="200" y1="250" x2="350" y2="250" class="conn-line"></line>
+                    <line x1="200" y1="330" x2="350" y2="150" class="conn-line"></line>
+                    <line x1="200" y1="330" x2="350" y2="250" class="conn-line"></line>
+                </g>
+            </svg>
+
+            <!-- SVG Data Flow & Knowledge Graph (Right Background) -->
+            <svg class="knowledge-graph-svg" viewBox="0 0 450 450" xmlns="http://www.w3.org/2000/svg">
+                <g class="graph-nodes">
+                    <!-- Nodes -->
+                    <circle cx="225" cy="225" r="10" class="node core-node"></circle>
+                    <circle cx="100" cy="120" r="5" class="node leaf-node"></circle>
+                    <circle cx="350" cy="120" r="5" class="node leaf-node"></circle>
+                    <circle cx="100" cy="330" r="5" class="node leaf-node"></circle>
+                    <circle cx="350" cy="330" r="5" class="node leaf-node"></circle>
+
+                    <circle cx="225" cy="80" r="7" class="node sub-core"></circle>
+                    <circle cx="225" cy="370" r="7" class="node sub-core"></circle>
+                    <circle cx="80" cy="225" r="7" class="node sub-core"></circle>
+                    <circle cx="370" cy="225" r="7" class="node sub-core"></circle>
+
+                    <!-- Core connections -->
+                    <line x1="225" y1="225" x2="225" y2="80" class="graph-line"></line>
+                    <line x1="225" y1="225" x2="225" y2="370" class="graph-line"></line>
+                    <line x1="225" y1="225" x2="80" y2="225" class="graph-line"></line>
+                    <line x1="225" y1="225" x2="370" y2="225" class="graph-line"></line>
+
+                    <!-- Sub connections -->
+                    <line x1="225" y1="80" x2="100" y2="120" class="graph-line"></line>
+                    <line x1="225" y1="80" x2="350" y2="120" class="graph-line"></line>
+                    <line x1="80" y1="225" x2="100" y2="120" class="graph-line"></line>
+                    <line x1="80" y1="225" x2="100" y2="330" class="graph-line"></line>
+                    <line x1="225" y1="370" x2="100" y2="330" class="graph-line"></line>
+                    <line x1="225" y1="370" x2="350" y2="330" class="graph-line"></line>
+                    <line x1="370" y1="225" x2="350" y2="120" class="graph-line"></line>
+                    <line x1="370" y1="225" x2="350" y2="330" class="graph-line"></line>
+                </g>
+            </svg>
+
+            <!-- Abstract Transformer Encoder/Decoder Block (Bottom Center) -->
+            <div class="transformer-block-visual">
+                <div class="block-title">TRANSFORMER_ENCODER // ATTENTION_HEAD</div>
+                <div class="attention-weights">
+                    <span class="weight-bar w-80"></span>
+                    <span class="weight-bar w-50"></span>
+                    <span class="weight-bar w-90"></span>
+                    <span class="weight-bar w-30"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Layer 2: Massive AI Marquee Outline Text -->
+        <div class="marquee-wrapper">
+            <div class="marquee-track">
+                <span>ARTIFICIAL INTELLIGENCE ➔ DATA SCIENCE ➔ MACHINE LEARNING ➔ FULL STACK DEVELOPER ➔ FLUTTER ➔
+                    LANGCHAIN ➔ PYTHON ➔ GEN AI ➔ DEEP LEARNING ➔ </span>
+                <span>ARTIFICIAL INTELLIGENCE ➔ DATA SCIENCE ➔ MACHINE LEARNING ➔ FULL STACK DEVELOPER ➔ FLUTTER ➔
+                    LANGCHAIN ➔ PYTHON ➔ GEN AI ➔ DEEP LEARNING ➔ </span>
+            </div>
+        </div>
+
+        <!-- Layer 3: Floating Data Particles Canvas -->
+        <canvas id="particle-canvas"></canvas>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="navbar-header" id="nav-header">
+        <div class="nav-container">
+            <a href="#" class="brand-logo" id="nav-brand-logo">ANOK.</a>
+
+            <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav-links" id="nav-menu">
+                <a href="#about" class="nav-link" id="link-about">About</a>
+                <a href="#skills" class="nav-link" id="link-skills">Skills</a>
+                <a href="#projects" class="nav-link" id="link-projects">Projects</a>
+                <a href="#academic-path" class="nav-link" id="link-academic-path">Journey</a>
+                <a href="#experience" class="nav-link" id="link-experience">Experience</a>
+                <a href="#contact" class="nav-link" id="link-contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <!-- Hero Section (Split Column Core Container) -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-left-col">
+                    <div class="tagline-badge" id="hero-tagline">
+                        Artificial Intelligence & Data Science
+                    </div>
+
+                    <h1 class="hero-title" id="hero-main-title">
+                        BODIPOGU<br>ANOK
+                    </h1>
+
+                    <div class="typewriter-container">
+                        <span class="typewriter-prefix">AI Focus: </span>
+                        <span class="typewriter-text" id="typewriter-target">Building AI Applications</span>
+                        <span class="typewriter-cursor">|</span>
+                    </div>
+
+                    <p class="hero-summary" id="hero-summary-text">
+                        A professional web platform designed to showcase my academic background, technical skills,
+                        projects, certifications, and experience. Highlighting expertise in Machine Learning, Full Stack
+                        Development, Mobile Application Development, and AI-powered solutions.
+                    </p>
+
+                    <div class="hero-actions-row">
+                        <!-- CTA Buttons -->
+                        <div class="hero-cta-tray">
+                            <a href="#projects" class="btn btn-primary" id="btn-view-projects">
+                                View Projects ↗
+                            </a>
+                            <a href="#contact" class="btn btn-outline" id="btn-get-touch">
+                                Get In Touch
+                            </a>
+                        </div>
+
+                        <!-- Social Tray: Glass Circular Buttons -->
+                        <div class="social-tray" id="hero-social-tray">
+                            <a href="https://github.com/anok-bodipogu-79" target="_blank" rel="noopener noreferrer"
+                                class="social-circle-btn" id="social-github-btn" aria-label="GitHub Profile">
+                                <svg class="svg-icon" viewBox="0 0 24 24" width="20" height="20">
+                                    <path fill="currentColor"
+                                        d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z" />
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com/in/bodipogu-anok-b662982" target="_blank"
+                                rel="noopener noreferrer" class="social-circle-btn" id="social-linkedin-btn"
+                                aria-label="LinkedIn Profile">
+                                <svg class="svg-icon" viewBox="0 0 24 24" width="20" height="20">
+                                    <path fill="currentColor"
+                                        d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z" />
+                                </svg>
+                            </a>
+                            <a href="mailto:bodipoguanok1006@gmail.com" class="social-circle-btn" id="social-email-btn"
+                                aria-label="Send Email">
+                                <svg class="svg-icon" viewBox="0 0 24 24" width="20" height="20">
+                                    <path fill="currentColor"
+                                        d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                            </a>
+                            <a href="./Resume_.pdf" download class="social-circle-btn" id="social-resume-btn"
+                                aria-label="Download Resume">
+                                <svg class="svg-icon" viewBox="0 0 24 24" width="20" height="20">
+                                    <path fill="currentColor"
+                                        d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right: Profile Card -->
+                <div class="hero-right-col">
+                    <div class="profile-card-container">
+                        <div class="profile-halo"></div>
+                        <div class="profile-card" id="hero-profile-card">
+                            <div class="profile-card-inner">
+                                <img src="profile.jpg" alt="Bodipogu Anok Profile" class="profile-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Performance Metrics Dashboard -->
+        <section class="metrics-section" id="metrics">
+            <div class="container">
+                <div class="metrics-grid">
+                    <div class="metric-card glass-panel" id="metric-cgpa">
+                        <div class="metric-glow"></div>
+                        <div class="metric-number">8.89</div>
+                        <div class="metric-label">Current CGPA</div>
+                    </div>
+                    <div class="metric-card glass-panel" id="metric-projects">
+                        <div class="metric-glow"></div>
+                        <div class="metric-number">3+</div>
+                        <div class="metric-label">Major Projects</div>
+                    </div>
+                    <div class="metric-card glass-panel" id="metric-graduation">
+                        <div class="metric-glow"></div>
+                        <div class="metric-number">2027</div>
+                        <div class="metric-label">Expected Graduation Year</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Profile & Focus Framework ("About Me") -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <h2 class="section-title">Building Intelligent Solutions</h2>
+
+                <div class="about-grid">
+                    <div class="about-left-col glass-panel" id="about-info-panel">
+                        <h3 class="panel-subtitle">VR Siddhartha Engineering College</h3>
+                        <p class="about-institute">B.Tech in Artificial Intelligence & Data Science</p>
+                        <p class="about-desc">
+                            My journey is centered around parsing complex datasets, optimizing machine learning
+                            topologies, and deploying highly automated AI models. I bridge the gap between academic
+                            theory and technical stack executions.
+                        </p>
+                        <p class="about-desc">
+                            Focused on continuous learning, I enjoy building scalable backend neural architectures,
+                            cross-platform mobile environments, and data analysis pipelines. I strive to transform raw
+                            input streams into automated business logic and predictive insights.
+                        </p>
+                        <div class="about-stats-list">
+                            <div class="about-stat-item">
+                                <span class="stat-bullet">➔</span>
+                                <div><strong>Target Arenas:</strong> Predictive ML systems, Deep Learning models, Full
+                                    Stack platforms.</div>
+                            </div>
+                            <div class="about-stat-item">
+                                <span class="stat-bullet">➔</span>
+                                <div><strong>Research Core:</strong> Data visualization, LangChain agents, statistical
+                                    algorithm tuning.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-right-col focus-matrix">
+                        <div class="focus-card glass-panel" id="focus-ai">
+                            <div class="focus-icon">
+                                <img src="./ai.png" alt="Artificial Intelligence">
+                            </div>
+                            <h4 class="focus-title">Artificial Intelligence</h4>
+                            <p class="focus-desc">Machine Learning pipelines, Deep Learning neural layers,
+                                classification tasks, and predictive system configurations.</p>
+                        </div>
+                        <div class="focus-card glass-panel" id="focus-fullstack">
+                            <div class="focus-icon">
+                                <img src="./web.png" alt="Full Stack Development">
+                            </div>
+                            <h4 class="focus-title">Full Stack Development</h4>
+                            <p class="focus-desc">Developing modern web apps with React.js, Express servers, Node.js
+                                background controllers, and secure API routers.</p>
+                        </div>
+                        <div class="focus-card glass-panel" id="focus-mobile">
+                            <div class="focus-icon">
+                                <img src="./development.png" alt="Mobile Development">
+                            </div>
+                            <h4 class="focus-title">Mobile App Development</h4>
+                            <p class="focus-desc">Designing native mobile applications using Flutter and Firebase
+                                systems, supporting responsive UI rendering.</p>
+                        </div>
+                        <div class="focus-card glass-panel" id="focus-datascience">
+                            <div class="focus-icon">
+                                <img src="./data.png" alt="Data Science">
+                            </div>
+                            <h4 class="focus-title">Data Science</h4>
+                            <p class="focus-desc">Performing statistical analysis, pandas cleaning, matplotlib/seaborn
+                                data visualizations, and custom model building.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Stack Showcase ("Skills") -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skill Matrix</h2>
+                <p class="contact-subtitle-desc" style="margin-top:-25px; margin-bottom:45px;">Languages, frameworks,
+                    tools, and technologies I work with.</p>
+
+                <!-- Category 1: Programming Languages -->
+                <div class="skills-group">
+                    <h3 class="skills-group-title">Programming Languages</h3>
+                    <div class="skills-showcase-grid">
+                        <div class="skill-card glass-panel" data-tech="python"
+                            data-desc="Primary programming language. Proficient in script automation, statistical pipelines, ML modeling, and API microservices.">
+                            <div class="skill-icon-container">🐍</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">Python</h4>
+                                <span class="skill-category-label">Programming Language</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-panel" data-tech="java"
+                            data-desc="Object-oriented programming language utilized for core system designs, data structures, and algorithms.">
+                            <div class="skill-icon-container">☕</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">Java</h4>
+                                <span class="skill-category-label">Programming Language</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-panel" data-tech="c"
+                            data-desc="Procedural systems language. Familiar with basic compiler structures, manual memory spaces, and fundamental systems.">
+                            <div class="skill-icon-container">⚙️</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">C</h4>
+                                <span class="skill-category-label">Programming Language</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-panel" data-tech="r"
+                            data-desc="Statistical language used for exploratory data analytics, regression equations, and graphical visualizations.">
+                            <div class="skill-icon-container">📊</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">R</h4>
+                                <span class="skill-category-label">Programming Language</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2: Web Development -->
+                <div class="skills-group">
+                    <h3 class="skills-group-title">Web Development</h3>
+                    <div class="skills-showcase-grid">
+                        <div class="skill-card glass-panel" data-tech="html"
+                            data-desc="Semantic markup architecture, search engine optimization, and custom component layout blueprints.">
+                            <div class="skill-icon-container">📄</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">HTML</h4>
+                                <span class="skill-category-label">Frontend</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-panel" data-tech="css"
+                            data-desc="Fluid stylesheets, responsive media break frameworks, core layout animations, variables, and flex/grid.">
+                            <div class="skill-icon-container">🎨</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">CSS</h4>
+                                <span class="skill-category-label">Frontend</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-panel" data-tech="javascript"
+                            data-desc="Dynamic logic controllers, browser DOM interactions, event listeners, API integrations, and async operations.">
+                            <div class="skill-icon-container">🟨</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">JavaScript</h4>
+                                <span class="skill-category-label">Programming Language</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-panel" data-tech="react"
+                            data-desc="Frontend framework for building reusable component hierarchies, managing state lifecycles, and rendering view layers.">
+                            <div class="skill-icon-container">⚛️</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">React</h4>
+                                <span class="skill-category-label">Frontend Framework</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-panel" data-tech="express"
+                            data-desc="Node.js lightweight server router, serving RESTful APIs and securing middleware endpoints.">
+                            <div class="skill-icon-container">⚡</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">Express.js</h4>
+                                <span class="skill-category-label">Backend Framework</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-panel" data-tech="node"
+                            data-desc="Runtime execution context for executing scalable background logic, handling I/O paths, and managing npm modules.">
+                            <div class="skill-icon-container">🟢</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">Node.js</h4>
+                                <span class="skill-category-label">Runtime Environment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 3: Mobile Development -->
+                <div class="skills-group">
+                    <h3 class="skills-group-title">Mobile Development</h3>
+                    <div class="skills-showcase-grid">
+                        <div class="skill-card glass-panel" data-tech="flutter"
+                            data-desc="Main framework for constructing high-performance, single-codebase native mobile apps for Android & iOS.">
+                            <div class="skill-icon-container">🔷</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">Flutter</h4>
+                                <span class="skill-category-label">Cross Platform</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-panel" data-tech="firebase"
+                            data-desc="Realtime data collection platform. Real-time synchronizations, security rules, and user authentications.">
+                            <div class="skill-icon-container">🔥</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">Firebase</h4>
+                                <span class="skill-category-label">Backend Service</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 4: Databases -->
+                <div class="skills-group">
+                    <h3 class="skills-group-title">Databases</h3>
+                    <div class="skills-showcase-grid">
+                        <div class="skill-card glass-panel" data-tech="mongodb"
+                            data-desc="Document database designed to scale. Custom schema shapes, aggregation paths, and cursor execution structures.">
+                            <div class="skill-icon-container">🍃</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">MongoDB</h4>
+                                <span class="skill-category-label">Database</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-panel" data-tech="sql"
+                            data-desc="Relational querying engines, table normalization, keys, indexes, and complex joint execution sequences.">
+                            <div class="skill-icon-container">🗄️</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">SQL</h4>
+                                <span class="skill-category-label">Database</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-panel" data-tech="firestore"
+                            data-desc="Cloud Firestore database configured with collection schemes and real-time triggers.">
+                            <div class="skill-icon-container">🔥</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">Firestore</h4>
+                                <span class="skill-category-label">Cloud Database</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 5: AI & Data Science -->
+                <div class="skills-group">
+                    <h3 class="skills-group-title">AI & Data Science</h3>
+                    <div class="skills-showcase-grid">
+                        <div class="skill-card glass-panel" data-tech="ml"
+                            data-desc="Formulating classification pipelines, random forests, clustering structures, and cross-validation matrix models.">
+                            <div class="skill-icon-container">🤖</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">Machine Learning</h4>
+                                <span class="skill-category-label">AI Domain</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-panel" data-tech="langchain"
+                            data-desc="Agent frameworks mapping Large Language Model interactions, custom prompt prompts, and vector chains.">
+                            <div class="skill-icon-container">🔗</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">LangChain</h4>
+                                <span class="skill-category-label">LLM Framework</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-panel" data-tech="dataanalysis"
+                            data-desc="Python data structure tools designed for structural cleanup, CSV ingestion, data slicing, and analytics.">
+                            <div class="skill-icon-container">📊</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">Data Analysis</h4>
+                                <span class="skill-category-label">Analytics</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-panel" data-tech="modeldevelopment"
+                            data-desc="Formulating classifiers, fitting predictive matrices, and evaluating models with classification reports.">
+                            <div class="skill-icon-container">📈</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">Model Development</h4>
+                                <span class="skill-category-label">Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 6: Tools -->
+                <div class="skills-group">
+                    <h3 class="skills-group-title">Tools</h3>
+                    <div class="skills-showcase-grid">
+                        <div class="skill-card glass-panel" data-tech="git"
+                            data-desc="Version control systems to tracking local file logs.">
+                            <div class="skill-icon-container">⚙️</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">Git</h4>
+                                <span class="skill-category-label">Version Control</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-panel" data-tech="github"
+                            data-desc="Version control coordination, source storage tracking, pull requests, merges, and developer profiles.">
+                            <div class="skill-icon-container">🐙</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">GitHub</h4>
+                                <span class="skill-category-label">Repository Hosting</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-panel" data-tech="vscode"
+                            data-desc="Visual Studio Code code editor configured with code formatting, lint controls, and debug terminals.">
+                            <div class="skill-icon-container">💻</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">VS Code</h4>
+                                <span class="skill-category-label">IDE</span>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-panel" data-tech="firebase"
+                            data-desc="Google platform suite mapping hosting nodes, FCM cloud messaging triggers, and analytics logs.">
+                            <div class="skill-icon-container">🌐</div>
+                            <div class="skill-info-container">
+                                <h4 class="skill-name">Firebase</h4>
+                                <span class="skill-category-label">Cloud Platform</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Real-World Applications Logbook ("Projects") -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <h2 class="section-title">Real-World Applications Logbook</h2>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card glass-panel" id="proj-tracker">
+                        <div class="project-image-container">
+                            <img src="project1.png" alt="Smart Lost & Found Tracker UI Preview"
+                                class="project-cover-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-primary btn-sm view-details-btn" data-project="tracker">Explore
+                                    System Logs</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech-line">
+                                <span>Flutter</span> • <span>Node.js</span> • <span>Firebase</span> • <span>ESP32</span>
+                            </div>
+                            <h3 class="project-name">Smart Proximity Lost & Found Tracker</h3>
+                            <p class="project-summary">An IoT-based tracking system using GPS modules, ESP32 nodes, and
+                                dynamic Flutter client interactions to prevent item loss.</p>
+                            <div class="project-actions">
+                                <button class="project-action-link details-trigger" data-project="tracker">View
+                                    Technical Suite ➔</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card glass-panel" id="proj-disease">
+                        <div class="project-image-container">
+                            <img src="project2.png" alt="AI Disease Prediction Screen Preview"
+                                class="project-cover-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-primary btn-sm view-details-btn" data-project="disease">Explore
+                                    System Logs</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech-line">
+                                <span>Python</span> • <span>Scikit-Learn</span> • <span>Pandas</span> •
+                                <span>Flask</span>
+                            </div>
+                            <h3 class="project-name">AI Disease Prediction System</h3>
+                            <p class="project-summary">A high-accuracy machine learning classifier matching symptomatic
+                                user reports to disease diagnostics with Flask.</p>
+                            <div class="project-actions">
+                                <button class="project-action-link details-trigger" data-project="disease">View
+                                    Technical Suite ➔</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card glass-panel" id="proj-savvy">
+                        <div class="project-image-container">
+                            <img src="project3.png" alt="Savvy Script AI Screen Preview" class="project-cover-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-primary btn-sm view-details-btn" data-project="savvy">Explore
+                                    System Logs</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech-line">
+                                <span>LangChain</span> • <span>Flask</span> • <span>gTTS</span> • <span>Vanilla
+                                    JS</span>
+                            </div>
+                            <h3 class="project-name">Savvy Script AI</h3>
+                            <p class="project-summary">An automated agent script editor matching video briefs with
+                                LLM-orchestrated copy, audio outputs, and PDF layouts.</p>
+                            <div class="project-actions">
+                                <button class="project-action-link details-trigger" data-project="savvy">View Technical
+                                    Suite ➔</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic & Career Path Timeline -->
+        <section class="academic-section" id="academic-path">
+            <!-- Background network ambient activity particles -->
+            <div class="timeline-particles">
+                <div class="t-particle tp-1"></div>
+                <div class="t-particle tp-2"></div>
+                <div class="t-particle tp-3"></div>
+                <div class="t-particle tp-4"></div>
+                <div class="t-particle tp-5"></div>
+            </div>
+            <div class="container">
+                <h2 class="section-title">Journey of Growth</h2>
+                <p class="contact-subtitle-desc" style="margin-top:-25px; margin-bottom:45px;">Key academic milestones
+                    and educational progression.</p>
+
+                <div class="vertical-timeline-container">
+                    <div class="v-timeline-line"></div>
+
+                    <div class="v-timeline-track">
+                        <!-- SSC Milestone (Left) -->
+                        <div class="v-timeline-item left-item" id="milestone-ssc">
+                            <div class="v-timeline-node"></div>
+                            <div class="v-timeline-card glass-panel">
+                                <span class="v-badge-date">2020 – 2021</span>
+                                <h3 class="v-card-title">SSC</h3>
+                                <h4 class="v-card-institution">AP Model School & Junior College</h4>
+                                <p class="v-card-desc">Completed Secondary Education with 89.8% score and strong
+                                    academic foundations.</p>
+                            </div>
+                        </div>
+
+                        <!-- Intermediate Milestone (Right) -->
+                        <div class="v-timeline-item right-item" id="milestone-intermediate">
+                            <div class="v-timeline-node"></div>
+                            <div class="v-timeline-card glass-panel">
+                                <span class="v-badge-date">2021 – 2023</span>
+                                <h3 class="v-card-title">Intermediate (MPC)</h3>
+                                <h4 class="v-card-institution">AP Model School & Junior College</h4>
+                                <p class="v-card-desc">Completed Higher Secondary Education with 93.6% score and strong
+                                    analytical foundation in Mathematics, Physics, and Chemistry.</p>
+                            </div>
+                        </div>
+
+                        <!-- B.Tech Milestone (Left, Highlighted Active Card) -->
+                        <div class="v-timeline-item left-item active-milestone" id="milestone-btech">
+                            <div class="v-timeline-node active-node"></div>
+                            <div class="v-timeline-card glass-panel active-highlight-card">
+                                <span class="v-badge-date color-gold">2023 – 2027</span>
+                                <h3 class="v-card-title">B.Tech Artificial Intelligence & Data Science</h3>
+                                <h4 class="v-card-institution">VR Siddhartha Engineering College</h4>
+                                <p class="v-card-desc">Currently pursuing undergraduate studies in Artificial
+                                    Intelligence & Data Science.</p>
+                                <div class="v-card-footer">
+                                    <span class="v-score-label">Current CGPA:</span>
+                                    <span class="v-score-val">8.89</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Virtual Internships & Professional Training -->
+        <section class="experience-section" id="experience">
+            <div class="container">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="contact-subtitle-desc" style="margin-top:-25px; margin-bottom:45px;">Industry-oriented virtual
+                    internships and technical training programs.</p>
+
+                <div class="internships-grid">
+                    <!-- Internship Card 1 -->
+                    <div class="internship-card glass-panel" id="intern-aiml">
+                        <div class="internship-badge-row">
+                            <span class="intern-year">2025</span>
+                            <span class="intern-provider">Eduskills</span>
+                        </div>
+                        <h3 class="internship-title">AI-ML Virtual Internship</h3>
+                        <p class="internship-desc">
+                            Hands-on experience working with Machine Learning concepts, data preprocessing,
+                            classification models, and AI workflows.
+                        </p>
+                    </div>
+
+                    <!-- Internship Card 2 -->
+                    <div class="internship-card glass-panel" id="intern-android">
+                        <div class="internship-badge-row">
+                            <span class="intern-year">2025</span>
+                            <span class="intern-provider">Eduskills</span>
+                        </div>
+                        <h3 class="internship-title">Android Developer Virtual Internship</h3>
+                        <p class="internship-desc">
+                            Practical exposure to Android application development, UI design, API integration, and
+                            mobile application architecture.
+                        </p>
+                    </div>
+
+                    <!-- Internship Card 3 -->
+                    <div class="internship-card glass-panel" id="intern-fullstack">
+                        <div class="internship-badge-row">
+                            <span class="intern-year">2025</span>
+                            <span class="intern-provider">Eduskills</span>
+                        </div>
+                        <h3 class="internship-title">Python Full Stack Program</h3>
+                        <p class="internship-desc">
+                            Training focused on full stack web development, backend APIs, databases, frontend
+                            integration, and deployment fundamentals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-container-centered">
+                <span class="contact-pre-title">GET IN TOUCH</span>
+                <h2 class="section-title contact-title">Let's Connect</h2>
+
+                <p class="contact-subtitle-desc">
+                    Interested in discussing AI, Machine Learning, Full Stack Development, mobile applications, or
+                    internship opportunities? <br>Feel free to reach out.
+                </p>
+
+                <!-- Contact Form Card -->
+                <div class="contact-form-card glass-panel">
+                    <form class="connection-form" id="connection-form" action="#" method="POST">
+                        <div class="form-group-new">
+                            <label for="form-name" class="form-label-new">NAME</label>
+                            <input type="text" id="form-name" class="form-input-new" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group-new">
+                            <label for="form-email" class="form-label-new">EMAIL</label>
+                            <input type="email" id="form-email" class="form-input-new"
+                                placeholder="your.email@example.com" required>
+                        </div>
+
+                        <div class="form-group-new">
+                            <label for="form-message" class="form-label-new">MESSAGE</label>
+                            <textarea id="form-message" class="form-input-new text-area"
+                                placeholder="Hi Anok, I would like to discuss..." rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit-new" id="btn-submit-form">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Links -->
+                <div class="social-links-centered">
+                    <a href="https://github.com/anok-bodipogu-79" target="_blank" rel="noopener noreferrer"
+                        class="social-circle-btn" id="social-git" title="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/bodipogu-anok-b662982" target="_blank" rel="noopener noreferrer"
+                        class="social-circle-btn" id="social-in" title="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="mailto:bodipoguanok1006@gmail.com" class="social-circle-btn" id="social-mail"
+                        title="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                    <a href="./Resume_.pdf" download class="social-circle-btn" id="contact-resume-btn"
+                        aria-label="Download Resume">
+                        <svg class="svg-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path fill="currentColor"
+                                d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-wrapper">
+        <div class="container footer-container">
+            <p class="copyright-text">© 2026 Bodipogu Anok.</p>
+        </div>
+    </footer>
+
+    <!-- Full-Screen Pop-up Overlays & Modal Mechanics -->
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog">
+        <div class="modal-card glass-panel">
+            <button class="modal-close-btn" id="modal-close-trigger" aria-label="Close Modal">✕</button>
+            <div class="modal-scroll-body" id="modal-project-content">
+                <!-- Content gets injected dynamically by index.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Tech Skill Modal -->
+    <div class="modal-overlay" id="skill-modal" aria-hidden="true" role="dialog">
+        <div class="modal-card glass-panel skill-modal-card">
+            <button class="modal-close-btn" id="skill-close-trigger" aria-label="Close Modal">✕</button>
+            <div class="modal-scroll-body" id="modal-skill-content">
+                <!-- Content gets injected dynamically by index.js -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Core Script -->
+    <script src="index.js"></script>
+</body>
+
+</html>
